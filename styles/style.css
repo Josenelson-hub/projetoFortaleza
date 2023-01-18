@@ -1,0 +1,356 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(240, 227, 211);
+}
+
+a{
+    text-decoration-line: none;
+    color: black;
+}
+
+.p{
+    font-size: larger;
+}
+
+.header{
+    align-items: center;
+    background-color: rgb(141, 141, 248);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: fixed;
+    z-index: 2; 
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+}
+
+.navBarLateral{
+background-color: #fcebd4b9;
+   height: 100%;
+   width: 15%;
+   position: fixed;
+   display: none;
+   z-index: 90;
+}
+
+.navBarLateral.ativo{
+    display: block;
+    background-color: rgb(141, 141, 248, 0.90);
+   height: 100%;
+   width: 250px;
+   position: fixed;
+   animation-duration: 0.5s;
+   animation-name: slidein;
+}
+
+.listaNavBar{
+    margin-top: 70px;
+}
+
+.listaNavBar li{
+    list-style-type: none;
+    font-size: x-large;
+    margin: 10px 0;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: -50%;
+    }
+  
+    to {
+      margin-left: 0%;
+    }
+  }
+
+  .img{
+    width: 100%;
+    height: 100%;
+    border-radius:15px;
+    object-fit: cover;
+    z-index: 80;
+}
+
+.img:hover{
+scale: 1.05;
+box-shadow: 0 0 5px 5px rgb(229, 229, 255);
+transition: .3s;
+}
+  
+.tituloCasas{
+    padding-right: 50px;
+}
+
+.btn{
+    width: 60px;
+} 
+
+
+#csSergio1{
+    border-radius:15px ;
+    grid-area: a;
+}
+
+#csSergio2{
+    border-radius:15px ;
+    grid-area: b;
+}
+
+#csSergio3{
+    border-radius:15px ;
+    grid-area: c;
+}
+
+#csSergio4{
+    border-radius:15px ;
+    grid-area: d;
+}
+
+.csSergio{
+    padding-top:100px ;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagensCsSergio{
+    gap: 10px;
+    display: grid;
+    width: 100%;
+    height: 500px;
+    grid-template-areas:
+      "a a b"
+      "c d b";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 33% 33% 33%;
+
+}
+
+.tituloSergio{
+    font-size: xx-large;
+    font-weight: lighter;
+}
+
+.chegar{
+    grid-area: c;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   border-radius: 15px;
+   }
+
+.inf{
+    grid-area: inf;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    border-radius: 15px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.valores{
+    grid-area:v;
+    text-align: center;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   border-radius: 15px;
+}
+
+.maps{
+    grid-area: m;
+    border-radius: 15px;
+}
+
+.descricaoSergio{
+    margin-top: 50px;
+    gap: 10px;
+    display: grid;
+    width: 100%;
+    height: 500px;
+    grid-template-areas:
+      "c inf v"
+      "m m m";
+      grid-template-rows: 46% 54%;
+      grid-template-columns: 33% 33% 33%;
+}
+
+@media(max-width:500px){
+    .imagensCsSergio{
+        width: 92%;
+        grid-template-areas:
+        "a a b b"
+        "d d c c";
+      grid-template-rows: 50% 50%;
+      grid-template-columns:   25% 25% 25% 25%;
+}
+}
+
+@media(max-width:820px){
+    .descricaoSergio{
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .maps{
+ width: 100%;
+ height: 200px;
+    }
+    .chegar{
+        width: 100%;
+        height: 180px;
+    }
+    .inf{
+        width: 100%;
+        height: 180px;
+    }
+    .valores{
+        width: 100%;
+        height: 180px;
+    }
+    .contato{
+        margin-top: 300px;
+    }
+}
+
+
+.pacotes{
+    background-color: red;
+    border-radius: 15px;
+    padding: 5px 10px;
+    width: 100px;
+}
+
+.zap{
+    width: 100px;
+    height: 100px;
+}
+
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+#csClarice1{
+    border-radius:15px ;
+    grid-area: a;
+}
+
+#csClarice2{
+    border-radius:15px ;
+    grid-area: b;
+}
+
+#csClarice3{
+    border-radius:15px ;
+    grid-area: c;
+}
+
+#csClarice4{
+    border-radius:15px ;
+    grid-area: d;
+}
+
+.csClarice{
+    padding-top:100px ;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagensCsClarice{
+    gap: 10px;
+    display: grid;
+    width: 100%;
+    height: 500px;
+    grid-template-areas:
+      "c c b"
+      "a d d";
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 33% 33% 33%;
+
+}
+
+.tituloClarice{
+    font-size: xx-large;
+    font-weight: lighter;
+}
+
+.chegar{
+    grid-area: c;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   border-radius: 15px;
+   }
+
+.inf{
+    grid-area: inf;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    border-radius: 15px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.valores{
+    grid-area:v;
+    text-align: center;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   border-radius: 15px;
+}
+
+.maps{
+    grid-area: m;
+    border-radius: 15px;
+}
+
+.descricaoClarice{
+    margin-top: 50px;
+    gap: 10px;
+    display: grid;
+    width: 100%;
+    height: 500px;
+    grid-template-areas:
+      "c inf v"
+      "m m m";
+      grid-template-rows: 46% 54%;
+      grid-template-columns: 33% 33% 33%;
+}
+
+@media(max-width:500px){
+    .imagensCsClarice{
+        width: 92%;
+        grid-template-areas:
+        "a a b b"
+        "d d c c";
+      grid-template-rows: 50% 50%;
+      grid-template-columns:   25% 25% 25% 25%;
+}
+}
+
+@media(max-width:820px){
+    .descricaoClarice{
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .maps{
+ width: 100%;
+ height: 200px;
+    }
+    .chegar{
+        width: 100%;
+        height: 180px;
+    }
+    .inf{
+        width: 100%;
+        height: 180px;
+    }
+    .valores{
+        width: 100%;
+        height: 180px;
+    }
+    .contato{
+        margin-top: 300px;
+    }
+}

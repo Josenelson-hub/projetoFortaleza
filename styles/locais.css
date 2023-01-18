@@ -1,0 +1,187 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(240, 227, 211);
+}
+
+a{
+    text-decoration-line: none;
+    color: black;
+}
+
+.p{
+    font-size: larger;
+}
+
+.header{
+    align-items: center;
+    background-color: rgb(141, 141, 248);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: fixed;
+    z-index: 2; 
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+}
+
+.navBarLateral{
+background-color: #fcebd4b9;
+   height: 100%;
+   width: 15%;
+   position: fixed;
+   display: none;
+   z-index: 90;
+}
+
+.navBarLateral.ativo{
+    display: block;
+    background-color: rgb(141, 141, 248, 0.90);
+   height: 100%;
+   width: 250px;
+   position: fixed;
+   animation-duration: 0.5s;
+   animation-name: slidein;
+}
+
+.listaNavBar{
+    margin-top: 70px;
+}
+
+.listaNavBar li{
+    list-style-type: none;
+    font-size: x-large;
+    margin: 10px 0;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: -50%;
+    }
+  
+    to {
+      margin-left: 0%;
+    }
+  }
+
+  .img{
+    width: 100%;
+    height: 100%;
+    border-radius:15px;
+    object-fit: cover;
+    z-index: 80;
+}
+
+.img:hover{
+scale: 1.05;
+box-shadow: 0 0 5px 5px rgb(229, 229, 255);
+transition: .3s;
+}
+
+
+.btn{
+    width: 60px;
+} 
+
+#piscininha1{
+    grid-area: a2;
+    }
+    
+    #piscininha2{
+        grid-area: b2;
+    }
+    
+    #piscininha3{
+        grid-area: c2;
+    }
+    
+    #piscininha4{
+        grid-area: d2;
+    }
+    
+    .piscininha{
+        padding-top:100px ;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .gridPiscininha{
+        gap: 10px;
+        display: grid;
+        width: 100%;
+        height: 500px;
+        gap: 10px;
+        grid-template-areas: 
+          "a2 a2 b2"
+          "c2 d2 d2";
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 33% 33% 33%;
+    }  
+
+    @media(max-width:500px){
+        .gridPiscininha{
+            width: 100%;
+            grid-template-areas: 
+              "a2 a2 "
+              "c2 b2 "
+              "d2 d2";
+            grid-template-rows: 50% 50%;
+            grid-template-columns: 50% 50% 50%;
+        }
+        }  
+    
+       #pontao1{
+            grid-area: a3;
+        }
+        
+        #pontao2{
+            grid-area: b3;
+        }
+        
+        #pontao3{
+            grid-area: c3;
+        }
+        
+        #pontao4{
+            grid-area: d3;
+        }
+        
+        .pontao{
+            margin-top:160px ;
+            align-items: center;
+            text-align: center;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .gridPontao{
+            gap: 10px;
+            display: grid;
+            width: 100%;
+            height: 500px;
+            grid-template-areas: 
+            "a3 a3 c3"
+            "b3 d3 c3";
+            grid-template-rows: 50% 50%;
+            grid-template-columns: 33% 33% 33%;
+        }  
+
+        @media(max-width:500px){
+            .gridPontao{
+                width: 100%;
+                grid-template-areas: 
+                  "a3 c3 "
+                  "b3 b3 "
+                  "d3 d3";
+                grid-template-rows: 50% 50%;
+                grid-template-columns: 50% 50% 50%;
+            }
+            }  
